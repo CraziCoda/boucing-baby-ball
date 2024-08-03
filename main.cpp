@@ -27,6 +27,8 @@ void drawBall(float x, float y, float radius)
     int numPoints = 100;
 
     glBegin(GL_POLYGON);
+    // make it red because of Owuraku
+    glColor3f(1.0, 0.0, 0.0);
     for (int i = 0; i < numPoints; i++)
     {
         double angle = 2 * M_PI * i / numPoints;
